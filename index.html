@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/826eebedf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Engineer</p>
+                <h1>Hi, I'm <span>Antoan</span><br>Stoykov from Bulgaria</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------about---------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/antoan2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>Passionate programmer / java enthusiast in the beginning of
+                    his career! I have experience in basic, fundamental and
+                    advanced programmming. Familiar with Eclipse, InteliJ,
+                    Visual Studio, Codeblocks, DevC++, GitBash. I'm creative and
+                    mostly a team player. Really easy getting along with someone
+                    and working in a team is a pleasure for me. Motivated for
+                    learning new stuff and gaining experience</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Backend Development</span><br>Maintaining and performing actions</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android / iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Palfinger (3 months)
+                            Position: Engineering Intern</span><br>Completed a three-months internship within the engineering department of Palfinger</li>
+                        <li><span>Part-time site Development</span><br>Web app Development</li>
+                        <li><span>Part-time Game Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2013 - 2018 High School Diploma</span><br>PGSA Kolio Ficheto High School - Yambol</li>
+                        <li><span>2018 - 2022 Bachelor’s Degree in Computer Science</span><br>Trakia University - Stara Zagora</li>
+                        <li><span>2023 - 2024 Quality Assurance course </span><br>Strypes</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- ----------------services--------------- --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Whether you're a startup or a seasoned business, I can build custom websites that reflect your brand identity, drive engagement, and boost conversions. From sleek landing pages to robust e-commerce platforms, we've got you covered.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>We believe in the power of user-centric design to enhance customer satisfaction and loyalty. Our UI/UX designers combine aesthetics with functionality to create intuitive interfaces that deliver an unforgettable user experience across all devices!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique molestiae eos sequi laborum omnis expedita laboriosam aut ad delectus sed eaque dignissimos, debitis quo dolorem? Nam quasi adipisci odit est.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- --------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/game.png">
+                <div class="layer">
+                    <h3>Game App</h3>
+                    <p>The app connects you to talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope-circle-check"></i> stoikovantoan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +359877305179</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/antoan.stoikov.3/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/antoaaannn/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/antoan-stoikov/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV_Antoan_programming.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"  name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> 2023 Antoan.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for (tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for (tabconent of tabcontents){
+        tabconent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+   var sidemenu = document.getElementById("sidemenu");
+
+   function openmenu(){
+      sidemenu.style.right = "0";
+   }
+   function closemenu(){
+      sidemenu.style.right = "-200px";
+   }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjCTxBTEXIT93Xtsqz02t-Ju099UG5op17oyJ4CvQeVXnVhkAuLLtGNympqe5YBT9knA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
